@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import base64
+import base64 #use base64 if you don't want to keep your password in the code
 
 
 username = "" #enter your username in a string
