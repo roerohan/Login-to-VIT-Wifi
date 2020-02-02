@@ -1,11 +1,21 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import base64 #use base64 if you don't want to keep your password in the code
+import base64
+from dotenv import load_dotenv
+import os
+from pathlib import Path
 
+load_dotenv(verbose=True)
 
-username = "" #enter your username in a string
-password = "" #enter your password in a string
+env_path = Path('.') / '.env'
 
+load_dotenv(dotenv_path=env_path)
+
+def getenv(var_name):
+    return os.getenv(var_name)
+
+username = getenv("USERNAME")
+password = getenv("PASSWORD")
 
 driver = webdriver.Chrome()
 driver.get("http://phc.prontonetworks.com/cgi-bin/authlogout")
