@@ -1,15 +1,20 @@
-# Run-Script-to-Login-to-Wifi
+# VIT Wifi Login
+
 Run this python script to login to VIT wifi automatically when connected.
+
+- `vit_wifi_login.py` - uses requests (no browser)
+- `selenium_vit_wifi_login.py` - uses selenium (with browser)
+
 Change the .get("//link") and element names to reuse the script to login to other places.
 
-Enter your username and password.
-
 To run, you need:
-1. Python
-2. pip
+1. Python3
+2. pip3
 
 To get selenium:
+```
 pip install selenium
+```
 
 Get chromedriver here:
 http://chromedriver.chromium.org/
